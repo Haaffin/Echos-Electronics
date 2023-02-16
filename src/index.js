@@ -6,6 +6,7 @@ import './styles/index.css';
 import Root from './routes/root';
 import Error from './error-page';
 import Test from './routes/test';
+import Redirect from './routes/homeRedirect';
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
     errorElement: <Error/>,
     children: [
       {
-        path: "/home",
-        element: <Test/>,
+        path: "/",
+        element: <Redirect/>,
+      },
+      {
+        path:'/home',
+        element: <Test/>
       }
     ]
   }
