@@ -1,6 +1,6 @@
 #root-body .header{
     display: flex;
-    border: 3px solid red;
+    border-bottom: 3px solid var(--border);
     padding: 5vh;
     text-align: center;
     justify-content: space-around;
