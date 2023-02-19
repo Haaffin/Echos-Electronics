@@ -1,0 +1,33 @@
+.footer-container{
+    border-top: 3px solid var(--border) ;
+    display: flex;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container .location-info,
+.footer-container .links{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.footer-container .location-info .contact-info,
+.footer-container .links {
+    padding: 1.5vw;
+
+}
+
+.footer-container .location-info .contact-info a{
+    color: var(--link);
+}
+
+.footer-container .location-info .contact-info a:hover{
+    text-decoration: underline;
+}
+
+.footer-container .location-info img{
+    width: 350px;
+}

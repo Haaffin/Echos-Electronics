@@ -5,8 +5,9 @@ import './styles/index.css';
 //page imports
 import Root from './routes/root';
 import Error from './error-page';
-import Test from './routes/test';
+import Services from './routes/services';
 import Redirect from './routes/homeRedirect';
+import Home from './routes/home';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
       },
       {
         path:'/home',
-        element: <Test/>
+        element: <Home/>
+      },
+      {
+        path: '/services',
+        element: <Services/>
       }
     ]
   }
